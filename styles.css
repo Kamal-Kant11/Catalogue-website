@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#page{
+    width: 100%;
+    height:100%;
+    background-color: rgb(174, 245, 221);
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+#navbar{
+    background-color:darkblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 80px;
+}
+#logo{
+    font-size: 150%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:blanchedalmond;
+}
+ul a:hover{
+    color: red;
+}
+/* ul a:visited{
+    color:blue;
+} */
+ul a{
+    text-decoration: none;
+    color:bisque;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+/* footer{
+    align-self:end;
+} */
+#foot{
+    background-color:darkblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 1005;
+    height: 50px;
+    font-size: 1.8rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:blanchedalmond;
+}
+button{
+    height: 40px;
+    width: 100px;
+    background-color:azure;
+}
+
+img:hover{
+    /* background-color: rgb(229, 188, 5); */
+    transform: scale(1.2);
+    transition-timing-function: linear;
+    transition-duration: .5s;
+    border: 2px solid navy;
+    font-style: bold;
+}
+#I1,#I2,#I3{
+    display: flex;
+    justify-content: space-between;
+
+}
+@media(max-width:1200px){
+    #I1,#I2,#I3{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content:space-between;
+    }
+    img{
+        width:90%;
+        margin-bottom: 30px;
+    }
+    #left{
+        width: 100%;
+    }
+    h2{
+        text-align:center;
+    }
+    table{
+        width:100%
+    }
+    td{
+        text-align: center;
+    }
+    #logo{
+        font-size: 100%;
+    }
+    /* #links{
+        width:50%
+    } */
+}
+
+
+@media(min-width:1000px) {
+    img{
+        width: 350px;
+    }
+    
+}
+#dell img{
+    /* width: 350px; */
+    box-shadow: 7px 7px 15px 10px rgb(28, 118, 220);
+}
+#asus img{
+    /* width: 350px; */
+    box-shadow: 7px 7px 15px 10px rgb(230, 9, 149);
+}
+#hp img{
+    /* width: 350px; */
+    box-shadow: 7px 7px 15px 10px rgb(4, 140, 11);
+
+}  
+#dell{
+    width: 60%;
+    align-self: center;
+    background-color: skyblue;
+    padding:50px;
+    margin: 20px;
+    line-height: 2rem;
+    box-shadow:  10px 10px 25px 15px rgb(56, 189, 185);
+}
+#asus{
+    width: 60%;
+    align-self: center;
+    background-color: pink;
+    padding:50px;
+    margin: 20px;
+    line-height: 2rem;
+    box-shadow:  10px 10px 25px 15px rgb(56, 189, 185);
+}
+#hp{
+    width: 60%;
+    align-self: center;
+    background-color: rgb(121, 235, 99);
+    padding:50px;
+    margin: 20px;
+    line-height: 2rem;
+    box-shadow:  10px 10px 25px 15px rgb(56, 189, 185);
+}
+
